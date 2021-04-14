@@ -4,20 +4,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import datetime as dt
 
-# zebranie i przygotowanie danych
-
-# 1. pobranie pliku pdf z banku i konwersja na csv
-# 2. pojawiający się błąd: pandas.errors.ParserError: Error tokenizing data. C error
-#    próba naprawy poprzez encoding='utf-8', error_bad_lines=False, które powodowało usuwanie części linii
-#    ostatecznym rozwiazaniem okazało się delimiter=';'
-# 3. w kolumnie 'Kwota operacji' problem z zamianem typu object na float. próba poprzes astype czy Series.to_numeric
-#    nie daje rezultatu, dodanie errors='coerce' zmienia wszsystkie str na Nan
-#    rozwiązaniem jest df.Series.str.replace, najpierw str 1 000,00 na 1000,00(' ','') aby usunąć spację w str,
-#    następnie zamiana 1000,00 na 1000.00(',','.') aby zmienić przecinek na kropkę i str na float
-#    dopełnieniem jest funkcja pd.to_numeric zmieniająca typ object na float
-# 4. zmiana daty z typu object na datatime za pomocą pd.Series.to_datatime,
-#    pojawił się porblem z błędną zaminą dnia < 12 na miesiąc, naprawione przez dodanie parametru dayfirst=True
-
 # zabiearanie i przetwarzanie danych
 
 df = pd.read_csv('Lista_operacj.csv', delimiter=';')  # 1, 2
@@ -27,13 +13,7 @@ df['Kwota operacji'] = pd.to_numeric(df['Kwota operacji'])  # 4
 df['Data księgowania'] = pd.to_datetime(df['Data księgowania'], dayfirst=True)  # 4
 df['Data waluty'] = pd.to_datetime(df['Data waluty'], dayfirst=True)  # 4
 
-# 5. Liczba transakcji w danym miesiącu lub roku
-# 6. Rozwinąć funkcję o wybór konkretnego roku i miesiąca
-# 7. Pierwotnie pojawił się problem z wyborem miesiaca w konkretnym roku, rozwiazany poprzez stworzenei funkcji
-#    lambda: time (time.year, time.month) gdzie rok i miesiac zostały zmapowane jako tuple
-# 8. Dodanie funkcji wyboru transakcji w określonym czasie
-# 9. Funkcja zwracająca listę wpływów, wydatków oraz ich sumę w rozliczeniu rocznym, miesiecznym i dowolnym okresie
-
+# klasa wyświetlająca transakcje, wypływy, wydatki w dowolnym okresie czasu
 
 class Transakcje:
 
@@ -125,5 +105,4 @@ class Transakcje:
 # przykładowe dane              
 Transakcje.roczne_info(2021)
 Transakcje.miesięczne_info(2020, 11)
-Transakcje.okresowe_info('2020-12-24', '2021-2-14')
-              
+Transakcje.okresowe_info('2020-12-24', '2021-2-14')              
