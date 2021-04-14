@@ -16,18 +16,16 @@ import datetime as dt
 #    następnie zamiana 1000,00 na 1000.00(',','.') aby zmienić przecinek na kropkę i str na float
 #    dopełnieniem jest funkcja pd.to_numeric zmieniająca typ object na float
 # 4. zmiana daty z typu object na datatime za pomocą pd.Series.to_datatime,
-#    pojawił się poblem z błędną zaminą dnia < 12 na miesiąc, naprawione przez dodanie parametru dayfirst=True
+#    pojawił się porblem z błędną zaminą dnia < 12 na miesiąc, naprawione przez dodanie parametru dayfirst=True
 
 # zabiearanie i przetwarzanie danych
 
-df = pd.read_csv('Lista_operacji_20210413_185554.csv', delimiter=';')  # 1, 2
+df = pd.read_csv('Lista_operacj.csv', delimiter=';')  # 1, 2
 df['Kwota operacji'] = df['Kwota operacji'].str.replace(' ', '')  # 3
 df['Kwota operacji'] = df['Kwota operacji'].str.replace(',', '.')  # 3
 df['Kwota operacji'] = pd.to_numeric(df['Kwota operacji'])  # 4
 df['Data księgowania'] = pd.to_datetime(df['Data księgowania'], dayfirst=True)  # 4
 df['Data waluty'] = pd.to_datetime(df['Data waluty'], dayfirst=True)  # 4
-
-
 
 # 5. Liczba transakcji w danym miesiącu lub roku
 # 6. Rozwinąć funkcję o wybór konkretnego roku i miesiąca
@@ -124,16 +122,8 @@ class Transakcje:
         Transakcje.przychód_wydatki_okres(start_date, end_date)
         Transakcje.liczba_transakcji_okres(start_date, end_date)
 
-
-# print(df.columns)
-# # print(df.info())
-# # print(df['Kategoria'].value_counts())
-# print()
-# print(df['Kategoria'].value_counts())
-print(df.columns)
-print(df['Nadawca / Odbiorca'].value_counts())
-
-# wykaz kategorii transakcji,
+# przykładowe dane              
 Transakcje.roczne_info(2021)
 Transakcje.miesięczne_info(2020, 11)
 Transakcje.okresowe_info('2020-12-24', '2021-2-14')
+              
