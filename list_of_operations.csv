@@ -1,0 +1,521 @@
+Posting Date,Sender/Reciver,Account,Title,Amount,Currency,Type,Category
+2021-04-13,Fresh Market,,Payment by card 12345,-11.0,USD,Card Payment,Groceries
+2021-04-13,Anna Smith,3456789012,Own Transfer,-2000.0,USD,BLIK Payment,No Category
+2021-04-13,Toyota,1111111111,Credit 4567,-597.0,USD,BLIK Payment,Credit/Loan Repayment
+2021-04-12,Lidl,,Payment by card 12345,-61.89,USD,Card Payment,Groceries
+2021-04-12,Hearts Bakery,,Payment by card 12345,-4.65,USD,Card Payment,Groceries
+2021-04-12,Home Expert,7777777777,Rent,-400.71,USD,Transfer,Other
+2021-04-12,Green Energy,5555555555,Electricity Bill,-83.63,USD,Transfer,Electricity
+2021-04-12,Best Burgers,,Payment by card 12345,-59.0,USD,Card Payment,Restaurant and Cafes
+2021-04-12,Ice Cream Factory,,Payment by card 12345,-20.0,USD,Card Payment,Groceries
+2021-04-10,Orange,1234567890,,-76.56,USD,BLIK Payment,"Internet, TV, Telephone"
+2021-04-10,VOD,,Payment by card 12345,-15.0,USD,Card Payment,"Internet, TV, Telephone"
+2021-04-10,Gigi,,Payment by card 12345,-22.91,USD,Card Payment,Groceries
+2021-04-10,Lidl,,Payment by card 12345,-107.18,USD,Card Payment,Groceries
+2021-04-10,Prudential Insurance,6666666666,Insurance nr 123,-72.0,USD,Transfer,No Category
+2021-04-09,Blue Media,,BLIK,-264.17,USD,BLIK Payment,No Category
+2021-04-09,Auchan,,Payment by card 12345,-67.85,USD,Card Payment,Groceries
+2021-04-09,Flowers and More,,Payment by card 12345,-69.1,USD,Card Payment,Garden
+2021-04-09,Best Company Ever,9999999999,Salary,7885.19,USD,Transfer,Salary
+2021-04-08,Hearts Bakery,,,-3.35,USD,Purchase,Groceries
+2021-04-08,Sandra Wu,7654321098,Transfer,-5.0,USD,Transfer,No Category
+2021-04-08,Fresh Market,,Payment by card 12345,-9.5,USD,Card Payment,Groceries
+2021-04-07,Lidl,,Payment by card 12345,-127.35,USD,Card Payment,Groceries
+2021-04-06,Auchan,,Payment by card 12345,-66.92,USD,Card Payment,Groceries
+2021-04-06,Rossmann,,Payment by card 67890,-87.71,USD,Card Payment,Cosmetics
+2021-04-06,PayU,9999999999,Order Return,300.0,USD,Transfer,Other
+2021-04-06,Bus Station,,BLIK,-4.0,USD,BLIK Payment,No Category
+2021-04-05,Fresh Market,,Payment by card 12345,-18.0,USD,Card Payment,Groceries
+2021-04-03,Fresh Market,,Payment by card 12345,-24.55,USD,Card Payment,Groceries
+2021-04-02,Car Wash,,,-15.0,USD,Purchase,"Car wash, inspections and repairs "
+2021-04-02,Auchan,,Payment by card 12345,-82.08,USD,Card Payment,Groceries
+2021-04-01,Highway Toll,,Payment by card 12345,-13.2,USD,Card Payment,Other
+2021-04-01,Shell,,Payment by card 12345,-169.71,USD,Card Payment,Fuel
+2021-04-01,Car Wash,,Payment by card 12345,-5.0,USD,Card Payment,"Car wash, inspections and repairs "
+2021-04-01,Auchan,,Payment by card 67890,-64.91,USD,Card Payment,Groceries
+2021-04-01,Fresh Market,,Payment by card 12345,-12.48,USD,Card Payment,Groceries
+2021-04-01,Hearts Bakery,,Payment by card 12345,-2.85,USD,Card Payment,Groceries
+2021-03-31,,9999999999,Interest on the Deposit,0.01,USD,Interest on the Deposit,"Interest, Return on Investment"
+2021-03-31,,,Tax Collected,-0.01,USD,Tax Collected,Taxes
+2021-03-31,Fresh Market,,Payment by card 12345,-12.0,USD,Card Payment,Groceries
+2021-03-31,Auchan,,Payment by card 12345,-30.62,USD,Card Payment,Groceries
+2021-03-31,Hearts Bakery,,Payment by card 12345,-5.95,USD,Card Payment,Groceries
+2021-03-30,Gigi,,,-12.0,USD,Purchase,Groceries
+2021-03-30,Auchan,,Payment by card 12345,-23.78,USD,Card Payment,Groceries
+2021-03-30,Hearts Bakery,,Payment by card 12345,-4.51,USD,Card Payment,Groceries
+2021-03-29,Pizza Napoli,,Payment by card 12345,-54.0,USD,Card Payment,Restaurant and Cafes
+2021-03-29,ABC,,Payment by card 12345,-10.1,USD,Card Payment,Groceries
+2021-03-29,Hearts Bakery,,Payment by card 12345,-3.66,USD,Card Payment,Groceries
+2021-03-29,Lidl,,Payment by card 12345,-9.99,USD,Card Payment,Groceries
+2021-03-29,Gigi,,Payment by card 12345,-10.0,USD,Card Payment,Groceries
+2021-03-27,VOD,,Payment by card 12345,-14.99,USD,Card Payment,"Internet, TV, Telephone"
+2021-03-27,Auchan,,Payment by card 12345,-37.4,USD,Card Payment,Groceries
+2021-03-27,Nature,,Payment by card 12345,-99.99,USD,Card Payment,Medicine
+2021-03-27,Auchan,,Payment by card 12345,-86.9,USD,Card Payment,Groceries
+2021-03-26,DelyMay,,Payment by card 12345,-9.18,USD,Card Payment,Groceries
+2021-03-26,Kaufland,,Payment by card 12345,-304.38,USD,Card Payment,Groceries
+2021-03-26,RayBan,,Payment by card 67890,-218.9,USD,Card Payment,Glasses and Lenses
+2021-03-26,Hearts Bakery,,Payment by card 12345,-5.37,USD,Card Payment,Groceries
+2021-03-26,PayPal,,BLIK,-74.95,USD,BLIK Payment,No Category
+2021-03-25,Interest,,,-18.69,USD,Interest,Interest
+2021-03-25,Interest,,,-1.53,USD,Interest,Interest
+2021-03-25,Car Wash,,,-5.0,USD,Purchase,"Car wash, inspections and repairs "
+2021-03-25,Fresh Market,,Payment by card 12345,-12.0,USD,Card Payment,Groceries
+2021-03-25,PayPal,,BLIK,-59.99,USD,BLIK Payment,No Category
+2021-03-24,Fresh Market,,Payment by card 12345,-14.98,USD,Card Payment,Groceries
+2021-03-23,Auchan,,Payment by card 12345,-120.18,USD,Card Payment,Groceries
+2021-03-23,Juliet Bakery,,Payment by card 67890,-13.6,USD,Card Payment,Groceries
+2021-03-23,Best Burgers,,Payment by card 12345,-44.0,USD,Card Payment,Restaurant and Cafes
+2021-03-23,Best Cakes In,,Payment by card 12345,-12.5,USD,Card Payment,Groceries
+2021-03-23,Fresh Market,,Payment by card 12345,-6.5,USD,Card Payment,Groceries
+2021-03-22,PayPal,,BLIK,-99.03,USD,BLIK Payment,No Category
+2021-03-22,PayPal,,BlIK,-71.29,USD,BLIK Payment,No Category
+2021-03-22,La vie en Rose,,Payment by card 12345,-26.0,USD,Card Payment,Groceries
+2021-03-22,BP,,Payment by card 12345,-217.38,USD,Card Payment,Fuel
+2021-03-20,Auchan,,Payment by card 12345,-20.33,USD,Card Payment,Groceries
+2021-03-20,DelyMay,,Payment by card 12345,-5.4,USD,Card Payment,Groceries
+2021-03-20,Drugstore,,Payment by card 12345,-18.0,USD,Card Payment,Medicine
+2021-03-20,Auchan,,Payment by card 12345,-50.98,USD,Card Payment,Groceries
+2021-03-20,Rossmann,,Payment by card 12345,-16.99,USD,Card Payment,Cosmetics
+2021-03-20,PayU,,BLIK,-17.24,USD,BLIK Payment,No Category
+2021-03-19,Fresh Market,,,-4.4,USD,Purchase,Groceries
+2021-03-19,Auchan,,Payment by card 12345,-53.82,USD,Card Payment,Groceries
+2021-03-19,Fresh Market,,Payment by card 12345,-6.0,USD,Card Payment,Groceries
+2021-03-19,Auchan,,Payment by card 12345,-127.99,USD,Card Payment,Groceries
+2021-03-19,Lidl,,Payment by card 12345,-10.09,USD,Card Payment,Groceries
+2021-03-19,,8888888888,Master Card Tax,-3.99,USD,,Bank Charges
+2021-03-19,Lidl,,Payment by card 12345,-5.98,USD,Card Payment,Groceries
+2021-03-18,Lidl,,Payment by card 12345,-8.99,USD,Card Payment,Groceries
+2021-03-18,Cookie and Cofe,,Payment by card 12345,-13.8,USD,Card Payment,Groceries
+2021-03-17,Four Seasons Restaurant,,Payment by card 12345,-37.0,USD,Card Payment,Restaurant and Cafes
+2021-03-16,Ticket Direct,,,-576.0,USD,Purchase,Cinema and Theater
+2021-03-16,Hearts Bakery,,Payment by card 12345,-8.98,USD,Card Payment,Groceries
+2021-03-16,Flowers and More,,Payment by card 12345,-67.4,USD,Card Payment,Garden
+2021-03-16,Lidl,,Payment by card 12345,-3.17,USD,Card Payment,Groceries
+2021-03-15,Car Wash,,,-6.0,USD,Purchase,"Car wash, inspections and repairs "
+2021-03-15,Auchan,,Payment by card 12345,-129.56,USD,Card Payment,Groceries
+2021-03-15,,4444444444,Credit 0981,-857.6,USD,Repayment,Credit/Loan Repayment
+2021-03-15,UPC,3333333333,Internet Sub,-39.0,USD,Transfer,"Internet, TV, Telephone"
+2021-03-15,Best Burgers,,Payment by card 12345,-49.0,USD,Card Payment,Restaurant and Cafes
+2021-03-13,Lidl,,Payment by card 12345,-29.82,USD,Card Payment,Groceries
+2021-03-13,Lidl,,Payment by card 12345,-81.23,USD,Card Payment,Groceries
+2021-03-12,Auchan,,Payment by card 12345,-8.31,USD,Card Payment,Groceries
+2021-03-11,VOD,,,-15.0,USD,Purchase,"Internet, TV, Telephone"
+2021-03-11,Tesco,,Payment by card 12345,-20.46,USD,Card Payment,Groceries
+2021-03-11,Best Burgers,,Payment by card 12345,-46.0,USD,Card Payment,Restaurant and Cafes
+2021-03-11,Town Hall,2345678901,Real Estate Tax,-62.0,USD,BLIK Payment,Taxes
+2021-03-11,Town Hall,2345678901,Real Estate Tax,-59.0,USD,BLIK Payment,Taxes
+2021-03-11,Town Hall,2345678901,Real Estate Tax,-58.0,USD,BLIK Payment,Taxes
+2021-03-11,Town Hall,2345678901,Real Estate Tax,-55.0,USD,BLIK Payment,Taxes
+2021-03-10,Master Card,2222222222,,359.0,USD,ATM Deposit,Other
+2021-03-10,Cookie and Cofe,,Payment by card 12345,-14.9,USD,Card Payment,Groceries
+2021-03-10,Adidas,,Payment by card 67890,-94.48,USD,Card Payment,Sport
+2021-03-10,BP,,Payment by card 12345,-215.41,USD,Card Payment,Fuel
+2021-03-10,Auchan,,Payment by card 67890,-78.16,USD,Card Payment,Cosmetics
+2021-03-10,Anna Smith,3456789012,Own Transfer,-2000.0,USD,BLIK Payment,No Category
+2021-03-10,Master Card,5678901234,Card dept,-359.0,USD,Card dept,Credit Card Repayment
+2021-03-10,Orange,7890123456,,-185.0,USD,BLIK Payment,"Internet, TV, Telephone"
+2021-03-10,Home Expert,7777777777,Rent,-400.71,USD,Transfer,Other
+2021-03-10,Prudential Insurance,6666666666,Insurance nr 123,-72.0,USD,Transfer,No Category
+2021-03-10,Green Energy,5555555555,Electricity Bill,-83.63,USD,Transfer,Electricity
+2021-03-10,Best Company Ever,9999999999,Salary,7896.25,USD,Transfer,Salary
+2021-03-09,Lidl,,,-23.96,USD,Purchase,Groceries
+2021-03-08,Pizza e Vino,,,-29.0,USD,Purchase,Groceries
+2021-03-06,Nice Cafe,,Payment by card 12345,-74.7,USD,Card Payment,Books
+2021-03-06,Auchan,,Payment by card 12345,-25.41,USD,Card Payment,Groceries
+2021-03-06,ING,,BLIK,-50.0,USD,BLIK Payment,No Category
+2021-03-06,ING,,BLIK,-50.0,USD,BLIK Payment,No Category
+2021-03-06,Orange,1234567890,,-83.94,USD,BLIK Payment,"Internet, TV, Telephone"
+2021-03-05,Carrfour,,Payment by card 12345,-35.75,USD,Card Payment,Groceries
+2021-03-05,Pizza Toscana,,Payment by card 12345,-33.0,USD,Card Payment,Restaurant and Cafes
+2021-03-05,Highway Toll,,Payment by card 12345,-13.2,USD,Card Payment,Other
+2021-03-05,McDonald's,,Payment by card 12345,-27.7,USD,Card Payment,Restaurant and Cafes
+2021-03-05,BP,,Payment by card 12345,-91.97,USD,Card Payment,Fuel
+2021-03-05,Ikea,,Payment by card 12345,-39.89,USD,Card Payment,Repairs and Renovations
+2021-03-04,Lidl,,,-12.48,USD,Purchase,Groceries
+2021-03-04,La vie en Rose,,Payment by card 12345,-33.5,USD,Card Payment,Groceries
+2021-03-04,Auchan,,Payment by card 12345,-88.26,USD,Card Payment,Groceries
+2021-03-04,Pierre Cardin,9999999999,Order Return,499.99,USD,Transfer,Other
+2021-03-03,Auchan,,Payment by card 12345,-18.65,USD,Card Payment,Groceries
+2021-03-03,Ikea,,Payment by card 12345,-47.5,USD,Card Payment,Equipment
+2021-03-03,Gigi,,Payment by card 12345,-25.0,USD,Card Payment,Restaurant and Cafes
+2021-03-03,Nature,,Payment by card 12345,-71.95,USD,Card Payment,Cosmetics
+2021-03-03,Lidl,,Payment by card 12345,-51.77,USD,Card Payment,Groceries
+2021-03-03,,8888888888,Tax,-5.0,USD,,Bank Charges
+2021-03-02,Slice of Bread,,Payment by card 12345,-8.55,USD,Card Payment,Groceries
+2021-03-02,Lidl,,Payment by card 12345,-11.25,USD,Card Payment,Groceries
+2021-03-01,Lidl,,,-10.84,USD,Purchase,Groceries
+2021-03-01,Auchan,,Payment by card 12345,-42.05,USD,Card Payment,Groceries
+2021-03-01,Fresh Market,,Payment by card 12345,-12.59,USD,Card Payment,Groceries
+2021-02-27,,9999999999,Interest on the Deposit,0.01,USD,Interest on the Deposit,"Interest, Return on Investment"
+2021-02-27,,,Tax Collected,-0.01,USD,Tax Collected,Taxes
+2021-02-27,Lidl,,Payment by card 12345,-7.03,USD,Card Payment,Groceries
+2021-02-27,Blue Media,,BLIK,-568.99,USD,BLIK Payment,No Category
+2021-02-27,Meat Love,,Payment by card 12345,-25.31,USD,Card Payment,Groceries
+2021-02-27,Lidl,,Payment by card 12345,-32.75,USD,Card Payment,Groceries
+2021-02-27,Car Parking,,Payment by card 12345,-4.0,USD,Card Payment,Other
+2021-02-27,Zara,,Payment by card 12345,-60.68,USD,Card Payment,Clothes
+2021-02-27,Starbucks,,Payment by card 12345,-21.98,USD,Card Payment,Equipment
+2021-02-27,Car Wash,,Payment by card 12345,-5.0,USD,Card Payment,"Car wash, inspections and repairs "
+2021-02-26,Ti Amo,,Payment by card 12345,-30.0,USD,Card Payment,Restaurant and Cafes
+2021-02-26,Kaufland,,Payment by card 12345,-87.25,USD,Card Payment,Groceries
+2021-02-26,BP,,Payment by card 12345,-198.0,USD,Card Payment,Fuel
+2021-02-25,Rossmann,,Payment by card 67890,-85.44,USD,Card Payment,Cosmetics
+2021-02-25,VOD,,Payment by card 12345,-14.99,USD,Card Payment,"Internet, TV, Telephone"
+2021-02-25,Interest,,,-21.02,USD,Interest,Interest
+2021-02-25,Interest,,,-1.52,USD,Interest,Interest
+2021-02-25,DelyMay,,Payment by card 12345,-6.88,USD,Card Payment,Groceries
+2021-02-25,Lidl,,Payment by card 12345,-53.71,USD,Card Payment,Groceries
+2021-02-24,Auchan,,Payment by card 12345,-75.05,USD,Card Payment,Groceries
+2021-02-24,Ikea,,Payment by card 12345,-52.91,USD,Card Payment,Repairs and Renovations
+2021-02-23,Lidl,,Payment by card 12345,-14.47,USD,Card Payment,Groceries
+2021-02-23,Auchan,,Payment by card 12345,-85.24,USD,Card Payment,Groceries
+2021-02-23,Rossmann,,Payment by card 12345,-45.41,USD,Card Payment,Cosmetics
+2021-02-22,Car Wash,,Payment by card 12345,-15.0,USD,Card Payment,"Car wash, inspections and repairs "
+2021-02-20,ABC,,Payment by card 12345,-10.65,USD,Card Payment,Groceries
+2021-02-20,Indian Food,,Payment by card 12345,-4.0,USD,Card Payment,Restaurant and Cafes
+2021-02-20,ABC,,Payment by card 12345,-7.2,USD,Card Payment,Groceries
+2021-02-20,Waffles,,Payment by card 12345,-45.0,USD,Card Payment,Restaurant and Cafes
+2021-02-20,ShoeShop,9012345678,Transfer,-71.8,USD,BLIK Payment,No Category
+2021-02-19,Highway Toll,,,-1.0,USD,Purchase,Other
+2021-02-19,Lidl,,,-12.48,USD,Purchase,Groceries
+2021-02-19,Lidl,,Payment by card 12345,-70.21,USD,Card Payment,Groceries
+2021-02-19,Lidl,,Payment by card 12345,-46.32,USD,Card Payment,Groceries
+2021-02-19,,8888888888,Master Card Tax,-3.99,USD,,Bank Charges
+2021-02-18,Auchan,,Payment by card 12345,-114.04,USD,Card Payment,Groceries
+2021-02-18,Slice of Bread,,,-4.75,USD,Purchase,Groceries
+2021-02-18,Best Company Ever,9999999999,Premia,470.0,USD,Transfer,Other
+2021-02-17,The Dumplings,,Payment by card 12345,-30.4,USD,Card Payment,Restaurant and Cafes
+2021-02-17,Car Parking,,Payment by card 12345,-4.0,USD,Card Payment,Other
+2021-02-17,Gino Rossi,,Payment by card 12345,-183.99,USD,Card Payment,Footwear
+2021-02-17,Zara,,Payment by card 12345,-119.99,USD,Card Payment,Clothes
+2021-02-17,Auchan,,Payment by card 12345,-37.89,USD,Card Payment,Groceries
+2021-02-16,PayPal,,BLIK,-19.9,USD,BLIK Payment,No Category
+2021-02-16,Lidl,,Payment by card 12345,-106.34,USD,Card Payment,Groceries
+2021-02-15,Kaufland,,Payment by card 12345,-59.43,USD,Card Payment,Groceries
+2021-02-15,Kaufland,,Payment by card 12345,-12.97,USD,Card Payment,Groceries
+2021-02-15,ABC,,Payment by card 12345,-19.66,USD,Card Payment,Groceries
+2021-02-15,,4444444444,Credit 0981,-857.6,USD,Repayment,Credit/Loan Repayment
+2021-02-15,UPC,3333333333,Internet Sub,-39.0,USD,Transfer,"Internet, TV, Telephone"
+2021-02-15,McDonald's,,Payment by card 12345,-16.7,USD,Card Payment,Restaurant and Cafes
+2021-02-15,Four Seasons Restaurant,,Payment by card 12345,-36.0,USD,Card Payment,Restaurant and Cafes
+2021-02-13,Auchan,,Payment by card 12345,-46.62,USD,Card Payment,Groceries
+2021-02-13,Rossmann,,Payment by card 12345,-142.72,USD,Card Payment,Cosmetics
+2021-02-12,CV for You,,,-59.9,USD,Purchase,Multimedia
+2021-02-12,Gigi,,Payment by card 12345,-13.08,USD,Card Payment,Groceries
+2021-02-12,Gigi,,Payment by card 12345,-25.25,USD,Card Payment,Groceries
+2021-02-12,Drugstore,,Payment by card 12345,-14.99,USD,Card Payment,Medicine
+2021-02-12,DPD,,Payment by card 67890,-259.99,USD,Card Payment,No Category
+2021-02-11,Asics,,Payment by card 12345,-24.99,USD,Card Payment,Footwear
+2021-02-11,TK Maxxx,,Payment by card 12345,-229.97,USD,Card Payment,Other
+2021-02-11,The Muffins,,Payment by card 12345,-10.0,USD,Card Payment,Groceries
+2021-02-11,Mohito,,Payment by card 12345,-89.97,USD,Card Payment,Clothes
+2021-02-11,Ikea,,Payment by card 12345,-59.0,USD,Card Payment,Equipment
+2021-02-11,Wrangler,,Payment by card 12345,-419.98,USD,Card Payment,Clothes
+2021-02-10,Master Card,2222222222,,363.0,USD,ATM Deposit,Other
+2021-02-10,Kaufland,,Payment by card 12345,-102.69,USD,Card Payment,Groceries
+2021-02-10,BP,,Payment by card 12345,-194.72,USD,Card Payment,Fuel
+2021-02-10,Anna Smith,3456789012,Own Transfer,-2000.0,USD,Transfer,Transfer
+2021-02-10,T-mobile,9876543210,Credit 0543,-495.0,USD,BLIK Payment,No Category
+2021-02-10,Master Card,5678901234,Card dept,-363.0,USD,Card dept,Credit Card Repayment
+2021-02-10,Home Expert,7777777777,Rent,-400.71,USD,Transfer,Other
+2021-02-10,Best Company Ever,9999999999,Salary,7879.67,USD,Transfer,Salary
+2021-02-10,Green Energy,5555555555,Electricity Bill,-83.63,USD,Transfer,Electricity
+2021-02-10,Prudential Insurance,6666666666,Insurance nr 123,-72.0,USD,Transfer,No Category
+2021-02-09,VOD,,,-15.0,USD,Purchase,"Internet, TV, Telephone"
+2021-02-09,PayU,9999999999,Order Return,529.0,USD,Transfer,Sale
+2021-01-30,,9999999999,Interest on the Deposit,0.01,USD,Interest on the Deposit,"Interest, Return on Investment"
+2021-01-30,,,Tax Collected,-0.01,USD,Tax Collected,Taxes
+2021-01-28,CV for You,,,-2.95,USD,Purchase,Multimedia
+2021-01-28,CV for You,,,-3.0,USD,Purchase,Multimedia
+2021-01-28,Auchan,,Payment by card 12345,-8.87,USD,Card Payment,Groceries
+2021-01-28,Lidl,,Payment by card 12345,-40.77,USD,Card Payment,Groceries
+2021-01-27,Kaufland,,Payment by card 12345,-142.57,USD,Card Payment,Groceries
+2021-01-26,Auchan,,Payment by card 12345,-12.39,USD,Card Payment,Groceries
+2021-01-26,VOD,,Payment by card 12345,-14.99,USD,Card Payment,"Internet, TV, Telephone"
+2021-01-26,BP,,,-204.34,USD,Purchase,Fuel
+2021-01-26,Adidas,9999999999,Order Return,107.91,USD,Transfer,Other
+2021-01-26,Auchan,,Payment by card 12345,-7.38,USD,Card Payment,Groceries
+2021-01-25,Interest,,,-21.53,USD,Interest,Interest
+2021-01-25,Car Wash,,,-5.0,USD,Purchase,"Car wash, inspections and repairs "
+2021-01-25,Lidl,,Payment by card 12345,-120.47,USD,Card Payment,Groceries
+2021-01-25,Hearts Bakery,,Payment by card 12345,-4.79,USD,Card Payment,Groceries
+2021-01-25,Auchan,,Payment by card 12345,-4.86,USD,Card Payment,Groceries
+2021-01-23,Kaufland,,Payment by card 12345,-82.74,USD,Card Payment,Groceries
+2021-01-23,Car Wash,,Payment by card 12345,-5.0,USD,Card Payment,"Car wash, inspections and repairs "
+2021-01-23,Gigi,,Payment by card 12345,-23.21,USD,Card Payment,Restaurant and Cafes
+2021-01-23,Nature,,Payment by card 12345,-25.97,USD,Card Payment,Cosmetics
+2021-01-23,Auchan,,Payment by card 12345,-34.44,USD,Card Payment,Groceries
+2021-01-22,Lidl,,Payment by card 12345,-52.01,USD,Card Payment,Groceries
+2021-01-22,Post Office,,Payment by card 12345,-2.8,USD,Card Payment,No Category
+2021-01-22,Car Wash,,Payment by card 12345,-5.0,USD,Card Payment,"Car wash, inspections and repairs "
+2021-01-22,Car Wash,,Payment by card 12345,-5.0,USD,Card Payment,"Car wash, inspections and repairs "
+2021-01-22,,8888888888,Master Card Tax,-3.99,USD,,Bank Charges
+2021-01-21,Auchan,,Payment by card 12345,-31.56,USD,Card Payment,Groceries
+2021-01-21,Auchan,,Payment by card 12345,-8.45,USD,Card Payment,Groceries
+2021-01-20,Auchan,,Payment by card 12345,-27.62,USD,Card Payment,Groceries
+2021-01-20,Auchan,,Payment by card 12345,-11.41,USD,Card Payment,Groceries
+2021-01-20,Rossmann,,Payment by card 12345,-9.17,USD,Card Payment,Cosmetics
+2021-01-19,Auchan,,Payment by card 12345,-28.75,USD,Card Payment,Groceries
+2021-01-19,Nature,,Payment by card 12345,-44.97,USD,Card Payment,Cosmetics
+2021-01-19,Auchan,,Payment by card 12345,-8.47,USD,Card Payment,Groceries
+2021-01-18,Master Card,2222222222,,365.0,USD,ATM Deposit,Other
+2021-01-18,Four Seasons Restaurant,,Payment by card 12345,-29.0,USD,Card Payment,Restaurant and Cafes
+2021-01-18,Rossmann,,Payment by card 12345,-130.39,USD,Card Payment,Cosmetics
+2021-01-18,Master Card,4567890123,Card dept,-365.0,USD,Transfer,Credit Card Repayment
+2021-01-18,Auchan,,Payment by card 12345,-7.96,USD,Card Payment,Groceries
+2021-01-18,Fresh Market,,Payment by card 12345,-12.1,USD,Card Payment,Groceries
+2021-01-16,Auchan,,Payment by card 12345,-65.55,USD,Card Payment,Groceries
+2021-01-16,PayU,,BLIK,-86.97,USD,BLIK Payment,No Category
+2021-01-15,Auchan,,Payment by card 12345,-187.08,USD,Card Payment,Groceries
+2021-01-15,Ikea,,Payment by card 12345,-183.43,USD,Card Payment,Equipment
+2021-01-15,Audi,0000000000,Credit 1144,-75.0,USD,BLIK Payment,Credit/Loan Repayment
+2021-01-15,,4444444444,Credit 0981,-857.6,USD,Repayment,Credit/Loan Repayment
+2021-01-15,UPC,3333333333,Internet Sub,-39.0,USD,Transfer,"Internet, TV, Telephone"
+2021-01-14,Auchan,,Payment by card 12345,-88.57,USD,Card Payment,Groceries
+2021-01-14,Slice of Bread,,Payment by card 12345,-6.46,USD,Card Payment,Groceries
+2021-01-14,Transfers24,8765432109,Transfer,-529.0,USD,BLIK Payment,No Category
+2021-01-13,Auchan,,Payment by card 12345,-67.46,USD,Card Payment,Groceries
+2021-01-13,Juliet Bakery,,Payment by card 12345,-5.8,USD,Card Payment,Groceries
+2021-01-12,Credite Agricole,6789012345,Credit 7822,-185.9,USD,BLIK Payment,Online Shopping
+2021-01-12,ABC,,Payment by card 12345,-5.4,USD,Card Payment,Groceries
+2021-01-12,Lidl,,Payment by card 12345,-61.49,USD,Card Payment,Groceries
+2021-01-12,DPD,,Payment by card 12345,-170.82,USD,Card Payment,No Category
+2021-01-11,Slice of Bread,,Payment by card 12345,-6.3,USD,Card Payment,Groceries
+2021-01-11,Home Expert,7777777777,Rent,-400.71,USD,Transfer,Other
+2021-01-11,Green Energy,5555555555,Electricity Bill,-83.63,USD,Transfer,Electricity
+2021-01-11,Fresh Market,,Payment by card 12345,-12.5,USD,Card Payment,Groceries
+2021-01-11,Prudential Insurance,6666666666,Insurance nr 123,-72.0,USD,Transfer,No Category
+2021-01-09,Tesco,,Payment by card 12345,-27.93,USD,Card Payment,Groceries
+2021-01-09,Tesco,,Payment by card 12345,-59.95,USD,Card Payment,Cosmetics
+2021-01-09,Cheap Clothes,,Payment by card 12345,-47.97,USD,Card Payment,Clothes
+2021-01-09,Rossmann,,Payment by card 12345,-136.41,USD,Card Payment,Cosmetics
+2021-01-09,T-mobile,0987654321,Credit 0543,-495.0,USD,BLIK Payment,No Category
+2021-01-09,Audi,0000000000,Credit 1144,-860.0,USD,BLIK Payment,Credit/Loan Repayment
+2021-01-09,Toyota,1111111111,Credit 4567,-594.0,USD,BLIK Payment,Credit/Loan Repayment
+2021-01-08,Best Company Ever,9999999999,Salary,6635.21,USD,Transfer,Salary
+2021-01-08,Ikea,,Payment by card 12345,-9.25,USD,Card Payment,Repairs and Renovations
+2021-01-07,Lidl,,Payment by card 12345,-9.25,USD,Card Payment,Groceries
+2021-01-05,KFC,,,-10.0,USD,Purchase,Restaurant and Cafes
+2021-01-05,Miss Butterfly,,,-29.0,USD,Purchase,Clothes
+2021-01-04,Four Seasons Restaurant,,,-23.0,USD,Purchase,Restaurant and Cafes
+2021-01-02,Bookstore,,,-46.0,USD,Purchase,Restaurant and Cafes
+2021-01-01,Fresh Market,,,-16.99,USD,Purchase,Groceries
+2021-01-01,Kaufland,,,-140.34,USD,Purchase,Groceries
+2020-12-31,Kaufland,,,-15.75,USD,Purchase,Groceries
+2020-12-31,ABC,,,-25.7,USD,Purchase,Groceries
+2020-12-31,,9999999999,Interest on the Deposit,0.01,USD,Interest on the Deposit,"Interest, Return on Investment"
+2020-12-31,,,Tax Collected,-0.01,USD,Tax Collected,Taxes
+2020-12-30,Burger King,,,-10.0,USD,Purchase,Restaurant and Cafes
+2020-12-28,Lidl,,Payment by card 12345,-81.2,USD,Card Payment,Groceries
+2020-12-28,VOD,,Payment by card 12345,-14.99,USD,Card Payment,"Internet, TV, Telephone"
+2020-12-28,Fresh Market,,Payment by card 12345,-21.59,USD,Card Payment,Groceries
+2020-12-25,Interest,,,-23.12,USD,Interest,Interest
+2020-12-25,Interest,,,-3.43,USD,Interest,Interest
+2020-12-24,Ikea,,Payment by card 12345,-50.63,USD,Card Payment,Groceries
+2020-12-23,Lidl,,Payment by card 12345,-55.42,USD,Card Payment,Groceries
+2020-12-23,Fresh Market,,Payment by card 12345,-16.1,USD,Card Payment,Groceries
+2020-12-22,Auchan,,Payment by card 12345,-35.58,USD,Card Payment,Groceries
+2020-12-22,InMedio,,Payment by card 12345,-19.99,USD,Card Payment,Newspapers and Magazines
+2020-12-22,Diamonds,,Payment by card 12345,-30.0,USD,Card Payment,Acessories and Jewelry
+2020-12-22,Blue Media,9999999999,Tax,1.0,USD,Transfer,Other
+2020-12-22,Auchan,,Payment by card 12345,-11.66,USD,Card Payment,Groceries
+2020-12-21,Master Card,2222222222,,401.0,USD,ATM Deposit,Other
+2020-12-21,Otto,,Payment by card 67890,-19.99,USD,Card Payment,Clothes
+2020-12-21,Auchan,,Payment by card 12345,-4.07,USD,Card Payment,Groceries
+2020-12-21,Waffles,,Payment by card 67890,-22.0,USD,Card Payment,Restaurant and Cafes
+2020-12-21,Master Card,4567890123,Card dept,-401.0,USD,Transfer,Credit Card Repayment
+2020-12-21,Nike,,Payment by card 12345,-199.99,USD,Card Payment,Footwear
+2020-12-21,Carrfour,,Payment by card 12345,-52.81,USD,Card Payment,Groceries
+2020-12-21,Home & You,,Payment by card 12345,-49.99,USD,Card Payment,Equipment
+2020-12-21,Home & You,,Payment by card 12345,-26.98,USD,Card Payment,Equipment
+2020-12-21,Rossmann,,Payment by card 12345,-92.53,USD,Card Payment,Cosmetics
+2020-12-19,Tesco,,Payment by card 12345,-8.16,USD,Card Payment,Groceries
+2020-12-19,Cheap Clothes,,Payment by card 12345,-39.99,USD,Card Payment,Clothes
+2020-12-18,Juliet Bakery,,Payment by card 67890,-3.5,USD,Card Payment,Groceries
+2020-12-18,BP,,Payment by card 12345,-134.69,USD,Card Payment,Fuel
+2020-12-18,Blue Media,8901234567,Tax,-1.0,USD,Transfer,Transfer
+2020-12-18,Car Wash,,Payment by card 12345,-10.0,USD,Card Payment,"Car wash, inspections and repairs "
+2020-12-18,Five o'clock,,Payment by card 12345,-24.08,USD,Card Payment,Groceries
+2020-12-18,Home & You,,Payment by card 12345,-20.0,USD,Card Payment,Equipment
+2020-12-18,Vege,,Payment by card 12345,-30.0,USD,Card Payment,Pubs and Clubs
+2020-12-18,Highway Toll,,Payment by card 12345,-0.5,USD,Card Payment,Other
+2020-12-18,Slice of Bread,,Payment by card 12345,-6.5,USD,Card Payment,Groceries
+2020-12-18,,8888888888,Master Card Tax,-3.99,USD,,Bank Charges
+2020-12-17,ABC,,Payment by card 12345,-10.46,USD,Card Payment,Groceries
+2020-12-17,Kaufland,,Payment by card 12345,-41.52,USD,Card Payment,Groceries
+2020-12-16,Auchan,,Payment by card 12345,-4.44,USD,Card Payment,Groceries
+2020-12-15,Another Shop,,Payment by card 67890,-6.99,USD,Card Payment,Acessories and Jewelry
+2020-12-15,Bookstore,,Payment by card 67890,-40.6,USD,Card Payment,Books
+2020-12-15,Rossmann,,Payment by card 67890,-35.26,USD,Card Payment,Cosmetics
+2020-12-15,H and M,,Payment by card 67890,-145.97,USD,Card Payment,Clothes
+2020-12-15,Lidl,,Payment by card 12345,-6.26,USD,Card Payment,Groceries
+2020-12-15,ABC,,Payment by card 12345,-3.4,USD,Card Payment,Groceries
+2020-12-15,,4444444444,Credit 0981,-859.67,USD,Repayment,Credit/Loan Repayment
+2020-12-15,UPC,3333333333,Internet Sub,-39.0,USD,Transfer,"Internet, TV, Telephone"
+2020-12-15,Toyota,1111111111,Credit 4567,-594.0,USD,BLIK Payment,Credit/Loan Repayment
+2020-12-15,Audi,0000000000,Credit 1144,-935.0,USD,BLIK Payment,Credit/Loan Repayment
+2020-12-15,Credite Agricole,9999999999,Order Return,161.8,USD,BLIK Payment,Other
+2020-12-14,ABC,,Payment by card 12345,-7.7,USD,Card Payment,Groceries
+2020-12-14,Lidl,,Payment by card 12345,-47.9,USD,Card Payment,Groceries
+2020-12-14,The Dumplings,,Payment by card 12345,-25.0,USD,Card Payment,Restaurant and Cafes
+2020-12-14,Auchan,,Payment by card 12345,-3.07,USD,Card Payment,Groceries
+2020-12-14,Auchan,,Payment by card 12345,-14.95,USD,Card Payment,Groceries
+2020-12-14,Carrfour,,Payment by card 12345,-10.52,USD,Card Payment,Groceries
+2020-12-12,Nice Shop,,Payment by card 12345,-9.8,USD,Card Payment,Newspapers and Magazines
+2020-12-11,Rossmann,,Payment by card 12345,-58.05,USD,Card Payment,Cosmetics
+2020-12-11,Car Parking,,Payment by card 12345,-213.55,USD,Card Payment,No Category
+2020-12-10,Orange,1234567890,,-76.6,USD,BLIK Payment,"Internet, TV, Telephone"
+2020-12-10,Tesco,6543210987,Order 53890,-61.95,USD,BLIK Payment,No Category
+2020-12-10,Kaufland,,Payment by card 12345,-103.77,USD,Card Payment,Groceries
+2020-12-10,Home & You,,Payment by card 12345,-39.99,USD,Card Payment,Equipment
+2020-12-10,Bijou,,Payment by card 67890,-34.9,USD,Card Payment,Acessories and Jewelry
+2020-12-10,Ice Cream Factory,,Payment by card 12345,-5.0,USD,Card Payment,Restaurant and Cafes
+2020-12-10,Car Wash,,Payment by card 12345,-5.0,USD,Card Payment,"Car wash, inspections and repairs "
+2020-12-10,Home Expert,7777777777,Rent,-400.71,USD,Transfer,Other
+2020-12-10,Prudential Insurance,6666666666,Insurance nr 123,-72.0,USD,Transfer,No Category
+2020-12-10,Green Energy,5555555555,Electricity Bill,-83.63,USD,Transfer,Electricity
+2020-12-10,Best Company Ever,9999999999,Salary,5337.21,USD,Transfer,Salary
+2020-12-09,KFC,,Payment by card 12345,-10.0,USD,Card Payment,Restaurant and Cafes
+2020-12-05,Auchan,,Payment by card 12345,-2.59,USD,Card Payment,Groceries
+2020-12-03,Eko,,Payment by card 12345,-5.99,USD,Card Payment,Groceries
+2020-12-02,KFC,,Payment by card 12345,-10.0,USD,Card Payment,Restaurant and Cafes
+2020-12-01,BP,,Payment by card 12345,-80.09,USD,Card Payment,Fuel
+2020-12-01,Auchan,,Payment by card 12345,-3.94,USD,Card Payment,Groceries
+2020-11-30,,,Tax Collected,-0.01,USD,Tax Collected,Taxes
+2020-11-30,,9999999999,Interest on the Deposit,0.01,USD,Interest on the Deposit,"Interest, Return on Investment"
+2020-11-30,Auchan,,Payment by card 12345,-30.13,USD,Card Payment,Groceries
+2020-11-30,Auchan,,Payment by card 12345,-6.37,USD,Card Payment,Groceries
+2020-11-30,Fresh Market,,Payment by card 12345,-35.19,USD,Card Payment,Groceries
+2020-11-30,KFC,,Payment by card 12345,-5.0,USD,Card Payment,Restaurant and Cafes
+2020-11-28,Lidl,,Payment by card 12345,-71.87,USD,Card Payment,Groceries
+2020-11-28,Ikea,,Payment by card 12345,-22.94,USD,Card Payment,Repairs and Renovations
+2020-11-28,Hearts Bakery,,Payment by card 67890,-3.59,USD,Card Payment,Groceries
+2020-11-27,VOD,,Payment by card 12345,-14.99,USD,Card Payment,"Internet, TV, Telephone"
+2020-11-27,Tesco,,Payment by card 12345,-52.74,USD,Card Payment,Groceries
+2020-11-27,Nature,,Payment by card 67890,-31.45,USD,Card Payment,Cosmetics
+2020-11-27,Loundry,,Payment by card 12345,-14.99,USD,Card Payment,Services
+2020-11-27,Post Office,,Payment by card 12345,-23.7,USD,Card Payment,No Category
+2020-11-27,Auchan,,Payment by card 12345,-84.87,USD,Card Payment,Groceries
+2020-11-27,Lidl,,Payment by card 12345,-144.85,USD,Card Payment,Groceries
+2020-11-26,Master Card,,,-30.0,USD,Payment,Bank Charges
+2020-11-26,Prudential Insurance,6666666666,Insurance nr 123,-80.12,USD,BLIK Payment,No Category
+2020-11-25,Interest,,,-19.97,USD,Interest,Interest
+2020-11-25,Interest,,,-0.76,USD,Interest,Interest
+2020-11-25,Slice of Bread,,,-5.0,USD,Purchase,Groceries
+2020-11-24,KFC,,,-10.0,USD,Purchase,Restaurant and Cafes
+2020-11-24,Barber Shop,,Payment by card 12345,-35.0,USD,Card Payment,"Beauty, Hairdresser and Beautician"
+2020-11-24,Auchan,,Payment by card 12345,-6.77,USD,Card Payment,Groceries
+2020-11-23,Four Seasons Restaurant,,Payment by card 12345,-23.0,USD,Card Payment,Restaurant and Cafes
+2020-11-23,ABC,,Payment by card 67890,-11.99,USD,Card Payment,Groceries
+2020-11-21,PayPal,,BLIK,-119.9,USD,BLIK Payment,No Category
+2020-11-21,Mechanic,,Payment by card 12345,-140.0,USD,Card Payment,"Car wash, inspections and repairs "
+2020-11-20,Shell,,Payment by card 12345,-155.52,USD,Card Payment,Fuel
+2020-11-20,Auchan,,Payment by card 12345,-75.32,USD,Card Payment,Groceries
+2020-11-20,,8888888888,Master Card Tax,-3.99,USD,,Bank Charges
+2020-11-19,KFC,,,-10.0,USD,Purchase,Restaurant and Cafes
+2020-11-19,Starbucks,,Payment by card 67890,-22.8,USD,Card Payment,Restaurant and Cafes
+2020-11-19,Slice of Bread,,Payment by card 12345,-5.4,USD,Card Payment,Groceries
+2020-11-18,Slice of Bread,,Payment by card 12345,-5.4,USD,Card Payment,Groceries
+2020-11-17,Auchan,,Payment by card 12345,-5.36,USD,Card Payment,Groceries
+2020-11-17,Auchan,,Payment by card 12345,-20.53,USD,Card Payment,Groceries
+2020-11-17,Fresh Market,,Payment by card 12345,-10.5,USD,Card Payment,Groceries
+2020-11-16,Auchan,,Payment by card 12345,-28.22,USD,Card Payment,Groceries
+2020-11-16,,4444444444,Credit 0981,-859.67,USD,Repayment,Credit/Loan Repayment
+2020-11-16,UPC,3333333333,Internet Sub,-39.0,USD,Transfer,"Internet, TV, Telephone"
+2020-11-16,Fresh Market,,Payment by card 12345,-16.99,USD,Card Payment,Groceries
+2020-11-16,Fresh Market,,Payment by card 12345,-15.08,USD,Card Payment,Groceries
+2020-11-14,Auchan,,Payment by card 12345,-90.16,USD,Card Payment,Groceries
+2020-11-13,Auchan,,Payment by card 12345,-22.93,USD,Card Payment,Groceries
+2020-11-12,Starbucks,,,-52.0,USD,Purchase,Restaurant and Cafes
+2020-11-12,ABC,,Payment by card 12345,-7.3,USD,Card Payment,Groceries
+2020-11-11,Burger King,,,-10.0,USD,Purchase,Restaurant and Cafes
+2020-11-11,Slice of Bread,,,-5.5,USD,Purchase,Groceries
+2020-11-11,Auchan,,,-72.38,USD,Purchase,Groceries
+2020-11-11,PayPal,,BLIK,-161.8,USD,BLIK Payment,No Category
+2020-11-10,Kaufland,,,-23.43,USD,Purchase,Groceries
+2020-11-10,Home Expert,7777777777,Rent,-400.71,USD,Transfer,Other
+2020-11-10,Green Energy,5555555555,Electricity Bill,-83.63,USD,Transfer,Electricity
+2020-11-10,Prudential Insurance,6666666666,Insurance nr 123,-72.0,USD,Transfer,No Category
+2020-11-09,BP,,,-178.86,USD,Purchase,Fuel
+2020-11-09,Blue Media,,BLIK,-40.8,USD,BLIK Payment,No Category
+2020-11-09,ABC,,Payment by card 12345,-9.5,USD,Card Payment,Groceries
+2020-11-09,Master Card,5678901234,Card dept,-348.0,USD,Card dept,Credit Card Repayment
+2020-11-09,Credite Agricole,6789012345,Credit 7822,-429.78,USD,Transfer,Online Shopping
+2020-11-09,Orange,7890123456,,-224.35,USD,Transfer,"Internet, TV, Telephone"
+2020-11-09,Orange,1234567890,,-76.68,USD,Transfer,"Internet, TV, Telephone"
+2020-11-09,Toyota,1111111111,Credit 4567,-594.0,USD,Transfer,Credit/Loan Repayment
+2020-11-09,Audi,0000000000,Credit 1144,-935.0,USD,Transfer,Credit/Loan Repayment
+2020-11-08,Master Card,2222222222,,348.0,USD,ATM Deposit,Other
+2020-11-06,Auchan,,Payment by card 12345,-73.78,USD,Card Payment,Groceries
+2020-11-06,Lidl,,,-3.68,USD,Purchase,Groceries
+2020-11-06,Nature,,Payment by card 12345,-69.43,USD,Card Payment,Cosmetics
+2020-11-06,Tesco,,Payment by card 12345,-48.53,USD,Card Payment,Groceries
+2020-11-06,ABC,,Payment by card 12345,-26.59,USD,Card Payment,Groceries
+2020-11-06,Best Company Ever,9999999999,Salary,5546.55,USD,Transfer,Salary
+2020-11-06,Car Wash,,Payment by card 12345,-10.0,USD,Card Payment,"Car wash, inspections and repairs "
+2020-11-05,Rossmann,,,-7.49,USD,Purchase,Cosmetics
+2020-11-05,ABC,,,-13.77,USD,Purchase,Groceries
+2020-11-05,KFC,,,-10.0,USD,Purchase,Restaurant and Cafes
+2020-11-05,Auchan,,,-47.14,USD,Purchase,Groceries
+2020-11-04,Auchan,,,-40.07,USD,Purchase,Groceries
+2020-11-03,Fresh Market,,,-11.59,USD,Purchase,Groceries
+2020-11-03,Carrfour,,,-4.89,USD,Purchase,Groceries
+2020-11-02,BP,,,-98.29,USD,Purchase,Fuel
+2020-11-02,Fresh Market,,,-16.19,USD,Purchase,Groceries
+2020-11-02,Rossmann,,,-2.99,USD,Purchase,Cosmetics
+2020-11-02,,8888888888,Charge,-0.2,USD,,Bank Charges
+2020-11-01,Auchan,,,-46.29,USD,Purchase,Groceries
+2020-10-31,Hearts Bakery,,,-3.54,USD,Purchase,Groceries
+2020-10-31,KFC,,,-5.0,USD,Purchase,Restaurant and Cafes
+2020-10-31,,9999999999,Interest on the Deposit,0.01,USD,Interest on the Deposit,"Interest, Return on Investment"
+2020-10-31,,,Tax Collected,-0.01,USD,Tax Collected,Taxes
+2020-10-30,ABC,,,-4.94,USD,Purchase,Groceries
+2020-10-29,Four Seasons Restaurant,,,-23.0,USD,Purchase,Restaurant and Cafes
+2020-10-29,ABC,,,-9.2,USD,Purchase,Groceries
+2020-10-29,VOD,,,-11.9,USD,Purchase,"Internet, TV, Telephone"
+2020-10-29,BP,,,-50.18,USD,Purchase,Fuel
+2020-10-28,Car Wash,,,-5.0,USD,Purchase,"Car wash, inspections and repairs "
+2020-10-28,ABC,,,-4.35,USD,Purchase,Groceries
+2020-10-28,Auchan,,,-39.19,USD,Purchase,Groceries
+2020-10-27,Juliet Bakery,,,-12.67,USD,Purchase,Groceries
+2020-10-27,Hearts Bakery,,,-4.9,USD,Purchase,Groceries
+2020-10-27,Toyota,1111111111,Credit 4567,-5.0,USD,BLIK Payment,Credit/Loan Repayment
+2020-10-27,Blue Media,,BLIK,-308.24,USD,BLIK Payment,No Category
+2020-10-25,Interest,,,-18.79,USD,Interest,Interest
+2020-10-25,Auchan,,,-33.3,USD,Purchase,Groceries
+2020-10-25,Interest,,,-0.46,USD,Interest,Interest
+2020-10-24,BP,,,-52.31,USD,Purchase,Fuel
+2020-10-24,Car Wash,,,-5.0,USD,Purchase,"Car wash, inspections and repairs "
+2020-10-24,Auchan,,,-4.59,USD,Purchase,Groceries
+2020-10-23,Drugstore,,,-19.99,USD,Purchase,Medicine
+2020-10-23,Kaufland,,,-96.15,USD,Purchase,Groceries
+2020-10-22,Auchan,,,-37.48,USD,Purchase,Groceries
+2020-10-22,,8888888888,Master Card Tax,-3.99,USD,,Bank Charges
+2020-10-21,Kaufland,,,-111.56,USD,Purchase,Groceries
+2020-10-21,Compensa Insurance,0123456789,insurance nr 091,-285.0,USD,Transfer,Insurance
+2020-10-20,McDonald's,,,-8.9,USD,Purchase,Restaurant and Cafes
+2020-10-20,Just a Shop,,,-9.0,USD,Purchase,Restaurant and Cafes
+2020-10-19,Master Card,2222222222,,327.0,USD,ATM Deposit,Other
+2020-10-19,Master Card,4567890123,Card dept,-327.0,USD,Transfer,Credit Card Repayment
+2020-10-19,Green Energy,5555555555,Electricity Bill,-74.07,USD,Transfer,Electricity
+2020-10-19,Fresh Market,,Payment by card 12345,-12.89,USD,Card Payment,Groceries
+2020-10-19,Slice of Bread,,Payment by card 12345,-7.37,USD,Card Payment,Groceries
+2020-10-19,GymCity,,Payment by card 67890,-20.0,USD,Card Payment,Sport
+2020-10-17,Audi,0000000000,Credit 1144,-935.0,USD,Transfer,Credit/Loan Repayment
+2020-10-16,Tesco,,Payment by card 12345,-12.58,USD,Card Payment,Groceries
+2020-10-16,Fresh Market,,Payment by card 12345,-9.99,USD,Card Payment,Groceries
+2020-10-15,Toys4Us,,,-65.97,USD,Purchase,Toys
+2020-10-15,,4444444444,Credit 0981,-859.67,USD,Repayment,Credit/Loan Repayment
+2020-10-15,UPC,3333333333,Internet Sub,-39.0,USD,Transfer,"Internet, TV, Telephone"
+2020-10-15,Toyota,1111111111,Credit 4567,-570.0,USD,BLIK Payment,Credit/Loan Repayment
+2020-10-15,Orange,1234567890,,-76.56,USD,BLIK Payment,"Internet, TV, Telephone"
+2020-10-15,Blue Media,,BLIK,-195.85,USD,BLIK Payment,No Category
+2020-10-15,Home Expert,7777777777,Rent,-368.48,USD,Transfer,Other
+2020-10-14,John Smith,,Cash withdrawal in the bank,-500.0,USD,Cash withdrawal in the bank,No Category
+2020-10-14,Auchan,,,-5.27,USD,Purchase,Groceries
+2020-10-13,Anna Smith,9999999999,Own Transfer,10.0,USD,Transfer,Internal Transfer
+2020-10-13,Michael Mayer,9999999999,Present,50.0,USD,Transfer,Donations
+2020-10-12,John Smith,,Cash withdrawal in the bank,-500.0,USD,Cash withdrawal in the bank,No Category
+2020-10-09,Best Company Ever,9999999999,Salary,5546.55,USD,Transfer,Salary
+2020-10-09,John Smith,,Cash withdrawal in the bank,-350.0,USD,Cash withdrawal in the bank,No Category
