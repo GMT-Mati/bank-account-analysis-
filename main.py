@@ -15,7 +15,8 @@ df['Data waluty'] = pd.to_datetime(df['Data waluty'], dayfirst=True)  # 4
 
 # klasa wyświetlająca transakcje, wypływy, wydatki w dowolnym okresie czasu
 
-class Transakcje():
+
+class Transakcje:
 
     def __init__(self, year, month, start_date, end_date):
         self.year = year
@@ -42,8 +43,8 @@ class Transakcje():
             print(f"Zysk wyniósł: {zysk} zł\n")
         else:
             print(f"Strata wyniosła: {zysk} zł\n")
-        print(f"Dochody w roku {year} to:\n{wykaz_dochodow}\n")
-        print(f"Wydatki w roku {year} to:\n{wykaz_wydatkow}\n")
+        print(f"Dochody w roku {year} to:\n{wykaz_dochodow.to_string(index=False)}\n")
+        print(f"Wydatki w roku {year} to:\n{wykaz_wydatkow.to_string(index=False)}\n")
 
     @staticmethod
     def przychod_wydatki_miesięczne(year, month):
@@ -74,8 +75,8 @@ class Transakcje():
             print(f"Zysk wyniósł: {zysk} zł\n")
         else:
             print(f"Strata wyniosła: {zysk} zł\n")
-        print(f"Dochody w wybranym miesiącu to:\n{wykaz_dochodow}\n")
-        print(f"Wydatki w wybranym miesiącu to:\n{wykaz_wydatkow}\n")
+        print(f"Dochody w wybranym miesiącu to:\n{wykaz_dochodow.to_string(index=False)}\n")
+        print(f"Wydatki w wybranym miesiącu to:\n{wykaz_wydatkow.to_string(index=False)}\n")
             
     @staticmethod
     def przychód_wydatki_okres(start_date, end_date):
@@ -97,23 +98,31 @@ class Transakcje():
             print(f"Zysk wyniósł: {zysk} zł\n")
         else:
             print(f"Strata wyniosła: {zysk} zł\n")
-        print(f"Dochody w wybranym okresie to:\n{wykaz_dochodow}\n")
-        print(f"Wydatki w wybranym okresie to:\n{wykaz_wydatkow}\n")
+        print(f"Dochody w wybranym okresie to:\n{wykaz_dochodow.to_string(index=False)}\n")
+        print(f"Wydatki w wybranym okresie to:\n{wykaz_wydatkow.to_string(index=False)}\n")
 
-    @staticmethod    
-    def roczne_info(year):
+
+class Informacja:
+    def __init__(self, year, month, start_date, end_date):
+        self.year = year
+        self.month = month
+        self.start_date = start_date
+        self.end_date = end_date
+
+    @staticmethod
+    def roczne(year):
         Transakcje.przychody_wydatki_roczne(year)
 
     @staticmethod
-    def miesięczne_info(year, month):
+    def miesięczne(year, month):
         Transakcje.przychod_wydatki_miesięczne(year, month)
 
     @staticmethod
-    def okresowe_info(start_date, end_date):
+    def okresowe(start_date, end_date):
         Transakcje.przychód_wydatki_okres(start_date, end_date)
         
         
 # przykładowe dane              
-Transakcje.roczne_info(2021)
-Transakcje.miesięczne_info(2020, 11)
-Transakcje.okresowe_info('2020-12-24', '2021-2-14')              
+Informacja.roczne(2021)
+Informacja.miesięczne(2020, 11)
+Informacja.okresowe('2020-12-24', '2021-2-14')              
