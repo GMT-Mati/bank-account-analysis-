@@ -1,16 +1,35 @@
-The original data contained numerous errors and inaccuracies. They were also in Polish. And they were not suitable for a publication because they contained sensitive data like names, credit card numbers and other.
+The original data contained numerous errors and inaccuracies.
+They were also in Polish. And they were not suitable for a publication because they contained sensitive data like names, credit card numbers and other.
 In order to prepare the .csv file for publication, I performed the following steps: 
-df = pd.read_csv(list_of_operations.csv', delimiter=';') # need 
 
+
+    # Receiving pandas.errors.ParserError: Error tokenizing data. C error I tried to fix with encoding = 'utf-8' and error_bad_lines = False, but it deleted some lines.
+    # Finally, the solution was very simple, it was enough to enter delimiter = ';' as reading conditions.
+    
+df = pd.read_csv(list_of_operations.csv', delimiter=';')
+
+    # rename columns from Polish to English
+    
 df = df.rename({'Data księgowania': 'Posting Date', 'Nadawca / Odbiorca': 'Sender/Reciver',
                 'Rachunek docelowy': 'Account', 'Tytułem': 'Title', 'Kwota operacji': 'Amount', 'Waluta': 'Currency',
                 'Typ operacji': 'Type', 'Kategoria': 'Category'}, axis=1)
                 
+    # In the 'Accountt' column, there is a problem with replacing the type object with float.
+    # Trying with astype or Series.to_numeric fails, adding errors = 'coerce' changes all str to NaN.
+    # The solution is df.Series.str.replace, first e.g. string 1 000,00 to 1000,00 with - ('', '') - to remove the space in str,
+    # then convert 1000,00 to 1000.00 - (' , ','. ') - to change comma to period and str to float.
+    # The complement is the pd.to_numeric function which changes the type object to float.
+    
 df['Account'] = df['Account'].str.replace(' ', '')
 df['Account'] = df['Account'].str.replace(',', '.')
 df['Account'] = pd.to_numeric(df['Account'])
+
+    # Changing the date in the 'Posting Date' column from Object type to datetime using pd.Series.to_datetime
+    
 df['Posting Date'] = pd.to_datetime(df['Posting Date'], dayfirst=True)
 
+    # Delete unnecessary columns 
+    
 del df['Data waluty']
 del df['Rachunek źródłowy']
 del df['Numer referencyjny']
