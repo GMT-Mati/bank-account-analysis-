@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import datetime as dt
 
-# FOR MORE INFORMATION PLEASE SEE THE DOCUMENTATION of DATA PREPARATION
+# FOR MORE INFORMATION PLEASE SEE THE DOCUMENTATION
 # COLLECTING AND PREPARING DATA
 
 df = pd.read_csv('list_of_operations.csv', delimiter=',')
