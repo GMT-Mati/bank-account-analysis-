@@ -79,3 +79,8 @@ df.to_csv('newfile.csv', index=False)
       # Everything can be broken down into annual, monthly or any time periods.
       
       # Creation of the info() function which allows to display all the data of interest to us in one simple command.
+      
+      
+      
+      
+      
