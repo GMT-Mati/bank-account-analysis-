@@ -25,10 +25,8 @@ class Transactions:
     @staticmethod
     def annual_tr(year):
         df['Year'] = df['Posting Date'].apply(lambda time: time.year)
-        income_list = df.loc[(df['Year'] == year) &
-                                (df['Amount'] > 0)][['Amount', 'Posting Date', 'Category']]
-        expenses_list = df.loc[(df['Year'] == year) &
-                                (df['Amount'] < 0)][['Amount', 'Posting Date', 'Category']]
+        income_list = df.loc[(df['Year'] == year) & (df['Amount'] > 0)][['Amount', 'Posting Date', 'Category']]
+        expenses_list = df.loc[(df['Year'] == year) & (df['Amount'] < 0)][['Amount', 'Posting Date', 'Category']]
         income_sum = round(df.loc[(df['Year'] == year) & (df['Amount'] > 0)]['Amount'].sum(), 2)
         expenses_sum = round(df.loc[(df['Year'] == year) & (df['Amount'] < 0)]['Amount'].sum(), 2)
         income_num_tr = len(df.loc[(df['Year'] == year) & (df['Amount'] > 0)]['Amount'])
@@ -56,14 +54,10 @@ class Transactions:
             ['Amount', 'Posting Date', 'Category']]
         expenses_list = df.loc[(df['Month'] == (year, month)) & (df['Amount'] < 0)][
             ['Amount', 'Posting Date', 'Category']]
-        income_sum = round(df.loc[(df['Month'] == (year, month)) &
-                                     (df['Amount'] > 0)]['Amount'].sum(), 2)
-        expenses_sum = round(df.loc[(df['Month'] == (year, month)) &
-                                     (df['Amount'] < 0)]['Amount'].sum(), 2)
-        income_num_tr = len(df.loc[(df['Month'] == (year, month)) &
-                                                (df['Amount'] > 0)]['Amount'])
-        expenses_num_tr = len(df.loc[(df['Month'] == (year, month)) &
-                                               (df['Amount'] < 0)]['Amount'])
+        income_sum = round(df.loc[(df['Month'] == (year, month)) & (df['Amount'] > 0)]['Amount'].sum(), 2)
+        expenses_sum = round(df.loc[(df['Month'] == (year, month)) & (df['Amount'] < 0)]['Amount'].sum(), 2)
+        income_num_tr = len(df.loc[(df['Month'] == (year, month)) & (df['Amount'] > 0)]['Amount'])
+        expenses_num_tr = len(df.loc[(df['Month'] == (year, month)) & (df['Amount'] < 0)]['Amount'])
         profit = round(income_sum + expenses_sum, 2)
         print(f"In {month_name(month)} {year}, {df[df['Month'] == (year, month)].count().iloc[0]} "
               f"transactions were carried out.\n"
@@ -79,7 +73,7 @@ class Transactions:
     @staticmethod
     def periodic_tr(start_date, end_date):
         df['Time'] = df['Posting Date'].between(start_date, end_date, inclusive=True)
-        icome_list = df.loc[(df['Time']) & (df['Amount'] > 0)][
+        income = df.loc[(df['Time']) & (df['Amount'] > 0)][
             ['Amount', 'Posting Date', 'Category']]
         expenses_list = df.loc[(df['Time']) & (df['Amount'] < 0)][
             ['Amount', 'Posting Date', 'Category']]
@@ -95,7 +89,7 @@ class Transactions:
             print(f"Total profit: {profit} zł\n")
         else:
             print(f"Total loss: {profit} zł\n")
-        print(f"List of income fom {start_date} to {end_date}:\n{icome_list.to_string(index=False)}\n")
+        print(f"List of income fom {start_date} to {end_date}:\n{income.to_string(index=False)}\n")
         print(f"List of expenses from {start_date} to {end_date}:\n{expenses_list.to_string(index=False)}\n")
 
 
@@ -117,6 +111,7 @@ class Information:
     @staticmethod
     def periodic(start_date, end_date):
         Transactions.periodic_tr(start_date, end_date)
+
 
 # FOR EXAMPLE
 Information.annual(2021)
