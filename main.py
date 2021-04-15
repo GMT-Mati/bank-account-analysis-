@@ -4,19 +4,17 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import datetime as dt
 
-# zabiearanie i przetwarzanie danych
+# FOR MORE INFORMATION PLEASE SEE THE DOCUMENTATION
+# COLLECTING AND PREPARING DATA
 
-df = pd.read_csv('Lista_operacj.csv', delimiter=';')  # 1, 2
-df['Kwota operacji'] = df['Kwota operacji'].str.replace(' ', '')  # 3
-df['Kwota operacji'] = df['Kwota operacji'].str.replace(',', '.')  # 3
-df['Kwota operacji'] = pd.to_numeric(df['Kwota operacji'])  # 4
-df['Data księgowania'] = pd.to_datetime(df['Data księgowania'], dayfirst=True)  # 4
-df['Data waluty'] = pd.to_datetime(df['Data waluty'], dayfirst=True)  # 4
+df = pd.read_csv('list_of_operations.csv', delimiter=',')
+df['Amount'] = pd.to_numeric(df['Amount'])  # 4
+df['Posting Date'] = pd.to_datetime(df['Posting Date'], dayfirst=True)
 
-# klasa wyświetlająca transakcje, wypływy, wydatki w dowolnym okresie czasu
+# PROCESSING DATA
 
 
-class Transakcje:
+class Transactions:
 
     def __init__(self, year, month, start_date, end_date):
         self.year = year
@@ -25,84 +23,83 @@ class Transakcje:
         self.end_date = end_date
 
     @staticmethod
-    def przychody_wydatki_roczne(year):
-        df['Year'] = df['Data księgowania'].apply(lambda time: time.year)
-        wykaz_dochodow = df.loc[(df['Year'] == year) &
-                                (df['Kwota operacji'] > 0)][['Kwota operacji', 'Data księgowania', 'Kategoria']]
-        wykaz_wydatkow = df.loc[(df['Year'] == year) &
-                                (df['Kwota operacji'] < 0)][['Kwota operacji', 'Data księgowania', 'Kategoria']]
-        suma_dochodow = round(df.loc[(df['Year'] == year) & (df['Kwota operacji'] > 0)]['Kwota operacji'].sum(), 2)
-        suma_wydatkow = round(df.loc[(df['Year'] == year) & (df['Kwota operacji'] < 0)]['Kwota operacji'].sum(), 2)
-        ilosc_transakcji_przychodu = len(df.loc[(df['Year'] == year) & (df['Kwota operacji'] > 0)]['Kwota operacji'])
-        ilosc_transakcji_wydatkow = len(df.loc[(df['Year'] == year) & (df['Kwota operacji'] < 0)]['Kwota operacji'])
-        zysk = round(suma_dochodow + suma_wydatkow, 2)
-        print(f"W roku: {year} przeprowadzono {df[df['Year'] == year].count().iloc[0]} transakcje.\n"
-              f"Suma dochodów: {suma_dochodow} zł ({ilosc_transakcji_przychodu} transakcje)"
-              f"\nSuma wydatków: {suma_wydatkow} zł ({ilosc_transakcji_wydatkow} transakcje)")
-        if zysk > 0:
-            print(f"Zysk wyniósł: {zysk} zł\n")
+    def annual_tr(year):
+        df['Year'] = df['Posting Date'].apply(lambda time: time.year)
+        income_list = df.loc[(df['Year'] == year) &
+                                (df['Amount'] > 0)][['Amount', 'Posting Date', 'Category']]
+        expenses_list = df.loc[(df['Year'] == year) &
+                                (df['Amount'] < 0)][['Amount', 'Posting Date', 'Category']]
+        income_sum = round(df.loc[(df['Year'] == year) & (df['Amount'] > 0)]['Amount'].sum(), 2)
+        expenses_sum = round(df.loc[(df['Year'] == year) & (df['Amount'] < 0)]['Amount'].sum(), 2)
+        income_num_tr = len(df.loc[(df['Year'] == year) & (df['Amount'] > 0)]['Amount'])
+        expenses_num_tr = len(df.loc[(df['Year'] == year) & (df['Amount'] < 0)]['Amount'])
+        profit = round(income_sum + expenses_sum, 2)
+        print(f"In year {year}, {df[df['Year'] == year].count().iloc[0]} transactions were carried out.\n"
+              f"Total income: {income_sum} USD ({income_num_tr} transactions)"
+              f"\nTotal expenses: {expenses_sum} USD ({expenses_num_tr} transactions)")
+        if profit > 0:
+            print(f"Total profit: {profit} USD\n")
         else:
-            print(f"Strata wyniosła: {zysk} zł\n")
-        print(f"Dochody w roku {year} to:\n{wykaz_dochodow.to_string(index=False)}\n")
-        print(f"Wydatki w roku {year} to:\n{wykaz_wydatkow.to_string(index=False)}\n")
+            print(f"Total loss: {profit} USD\n")
+        print(f"List of income in {year}:\n{income_list.to_string(index=False)}\n")
+        print(f"List of expenses in {year}:\n{expenses_list.to_string(index=False)}\n")
 
     @staticmethod
-    def przychod_wydatki_miesięczne(year, month):
-        df['Month'] = df['Data księgowania'].apply(lambda time: (time.year, time.month))
+    def monthly_tr(year, month):
+        df['Month'] = df['Posting Date'].apply(lambda time: (time.year, time.month))
 
-        def nazwa_miesiąca(month):
-            return {1: 'Styczeń', 2: 'Luty', 3: 'Marzec', 4: 'Kwiecień', 5: 'Maj', 6: 'Czerwiec', 7: 'Lipiec',
-                    8: 'Sierpień', 9: 'Wrzesień', 10: 'Październik', 11: 'Listopad', 12: 'Grudzień'}[month]
+        def month_name(month):
+            return {1: 'January', 2: 'February', 3: 'March', 4: 'April', 5: 'May', 6: 'June', 7: 'July',
+                    8: 'August', 9: 'September', 10: 'October', 11: 'November', 12: 'December'}[month]
 
-        wykaz_dochodow = df.loc[(df['Month'] == (year, month)) & (df['Kwota operacji'] > 0)][
-            ['Kwota operacji', 'Data księgowania', 'Kategoria']]
-        wykaz_wydatkow = df.loc[(df['Month'] == (year, month)) & (df['Kwota operacji'] < 0)][
-            ['Kwota operacji', 'Data księgowania', 'Kategoria']]
-        suma_dochodow = round(df.loc[(df['Month'] == (year, month)) &
-                                     (df['Kwota operacji'] > 0)]['Kwota operacji'].sum(), 2)
-        suma_wydatkow = round(df.loc[(df['Month'] == (year, month)) &
-                                     (df['Kwota operacji'] < 0)]['Kwota operacji'].sum(), 2)
-        ilosc_transakcji_przychodu = len(df.loc[(df['Month'] == (year, month)) &
-                                                (df['Kwota operacji'] > 0)]['Kwota operacji'])
-        ilosc_transakcji_wydatkow = len(df.loc[(df['Month'] == (year, month)) &
-                                               (df['Kwota operacji'] < 0)]['Kwota operacji'])
-        zysk = round(suma_dochodow + suma_wydatkow, 2)
-        print(f"W miesiącu {nazwa_miesiąca(month)} {year} przeprowadzono: "
-              f"{df[df['Month'] == (year, month)].count().iloc[0]} transakcje.\n"
-              f"Suma dochodów: {suma_dochodow} zł ({ilosc_transakcji_przychodu} transakcje)"
-              f"\nSuma wydatków: {suma_wydatkow} zł ({ilosc_transakcji_wydatkow} transakcje)")
-        if zysk > 0:
-            print(f"Zysk wyniósł: {zysk} zł\n")
+        income_list = df.loc[(df['Month'] == (year, month)) & (df['Amount'] > 0)][
+            ['Amount', 'Posting Date', 'Category']]
+        expenses_list = df.loc[(df['Month'] == (year, month)) & (df['Amount'] < 0)][
+            ['Amount', 'Posting Date', 'Category']]
+        income_sum = round(df.loc[(df['Month'] == (year, month)) &
+                                     (df['Amount'] > 0)]['Amount'].sum(), 2)
+        expenses_sum = round(df.loc[(df['Month'] == (year, month)) &
+                                     (df['Amount'] < 0)]['Amount'].sum(), 2)
+        income_num_tr = len(df.loc[(df['Month'] == (year, month)) &
+                                                (df['Amount'] > 0)]['Amount'])
+        expenses_num_tr = len(df.loc[(df['Month'] == (year, month)) &
+                                               (df['Amount'] < 0)]['Amount'])
+        profit = round(income_sum + expenses_sum, 2)
+        print(f"In {month_name(month)} {year}, {df[df['Month'] == (year, month)].count().iloc[0]} "
+              f"transactions were carried out.\n"
+              f"Total income: {income_sum} USD ({income_num_tr} transactions)"
+              f"\nTotal expenses: {expenses_sum} USD ({expenses_num_tr} transactions)")
+        if profit > 0:
+            print(f"Total profit: {profit} zł\n")
         else:
-            print(f"Strata wyniosła: {zysk} zł\n")
-        print(f"Dochody w wybranym miesiącu to:\n{wykaz_dochodow.to_string(index=False)}\n")
-        print(f"Wydatki w wybranym miesiącu to:\n{wykaz_wydatkow.to_string(index=False)}\n")
+            print(f"Total loss: {profit} zł\n")
+        print(f"List of income for {month_name(month)} {year}: \n{income_list.to_string(index=False)}\n")
+        print(f"List of expenses for {month_name(month)} {year}:\n{expenses_list.to_string(index=False)}\n")
             
     @staticmethod
-    def przychód_wydatki_okres(start_date, end_date):
-        df['Time'] = df['Data księgowania'].between(start_date, end_date, inclusive=True)
-        wykaz_dochodow = df.loc[(df['Time']) & (df['Kwota operacji'] > 0)][
-            ['Kwota operacji', 'Data księgowania', 'Kategoria']]
-        wykaz_wydatkow = df.loc[(df['Time']) & (df['Kwota operacji'] < 0)][
-            ['Kwota operacji', 'Data księgowania', 'Kategoria']]
-        suma_dochodow = round(df.loc[(df['Time']) & (df['Kwota operacji'] > 0)]['Kwota operacji'].sum(), 2)
-        suma_wydatkow = round(df.loc[(df['Time']) & (df['Kwota operacji'] < 0)]['Kwota operacji'].sum(), 2)
-        ilosc_transakcji_przychodu = len(df.loc[(df['Time']) & (df['Kwota operacji'] > 0)]['Kwota operacji'])
-        ilosc_transakcji_wydatkow = len(df.loc[(df['Time']) & (df['Kwota operacji'] < 0)]['Kwota operacji'])
-        zysk = round(suma_dochodow + suma_wydatkow, 2)
-        print(f"W okresie od {start_date} do {end_date} przeprowadzono "
-              f"{df.loc[df['Time']].count().iloc[0]} transakcje.\n"
-              f"Suma dochodów: {suma_dochodow} zł ({ilosc_transakcji_przychodu} transakcje)\n"
-              f"Suma wydatków: {suma_wydatkow} zł ({ilosc_transakcji_wydatkow} transakcje)")
-        if zysk > 0:
-            print(f"Zysk wyniósł: {zysk} zł\n")
+    def periodic_tr(start_date, end_date):
+        df['Time'] = df['Posting Date'].between(start_date, end_date, inclusive=True)
+        icome_list = df.loc[(df['Time']) & (df['Amount'] > 0)][
+            ['Amount', 'Posting Date', 'Category']]
+        expenses_list = df.loc[(df['Time']) & (df['Amount'] < 0)][
+            ['Amount', 'Posting Date', 'Category']]
+        income_sum = round(df.loc[(df['Time']) & (df['Amount'] > 0)]['Amount'].sum(), 2)
+        expenses_sum = round(df.loc[(df['Time']) & (df['Amount'] < 0)]['Amount'].sum(), 2)
+        income_num_tr = len(df.loc[(df['Time']) & (df['Amount'] > 0)]['Amount'])
+        expenses_num_tr = len(df.loc[(df['Time']) & (df['Amount'] < 0)]['Amount'])
+        profit = round(income_sum + expenses_sum, 2)
+        print(f"From {start_date} to {end_date}, {df.loc[df['Time']].count().iloc[0]} transactions were carried out.\n"
+              f"Total income: {income_sum} zł ({income_num_tr} transactions)\n"
+              f"Total expenses: {expenses_sum} zł ({expenses_num_tr} transactions)")
+        if profit > 0:
+            print(f"Total profit: {profit} zł\n")
         else:
-            print(f"Strata wyniosła: {zysk} zł\n")
-        print(f"Dochody w wybranym okresie to:\n{wykaz_dochodow.to_string(index=False)}\n")
-        print(f"Wydatki w wybranym okresie to:\n{wykaz_wydatkow.to_string(index=False)}\n")
+            print(f"Total loss: {profit} zł\n")
+        print(f"List of income fom {start_date} to {end_date}:\n{icome_list.to_string(index=False)}\n")
+        print(f"List of expenses from {start_date} to {end_date}:\n{expenses_list.to_string(index=False)}\n")
 
 
-class Informacja:
+class Information:
     def __init__(self, year, month, start_date, end_date):
         self.year = year
         self.month = month
@@ -110,19 +107,18 @@ class Informacja:
         self.end_date = end_date
 
     @staticmethod
-    def roczne(year):
-        Transakcje.przychody_wydatki_roczne(year)
+    def annual(year):
+        Transactions.annual_tr(year)
 
     @staticmethod
-    def miesięczne(year, month):
-        Transakcje.przychod_wydatki_miesięczne(year, month)
+    def monthly(year, month):
+        Transactions.monthly_tr(year, month)
 
     @staticmethod
-    def okresowe(start_date, end_date):
-        Transakcje.przychód_wydatki_okres(start_date, end_date)
-        
-        
-# przykładowe dane              
-Informacja.roczne(2021)
-Informacja.miesięczne(2020, 11)
-Informacja.okresowe('2020-12-24', '2021-2-14')              
+    def periodic(start_date, end_date):
+        Transactions.periodic_tr(start_date, end_date)
+
+# FOR EXAMPLE
+Information.annual(2021)
+Information.monthly(2020, 11)
+Information.periodic('2021-1-5', '2021-2-8')
