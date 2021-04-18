@@ -1,16 +1,15 @@
 import pandas as pd
-import numpy as np
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import seaborn as sns
-import datetime as dt
-from decimal import Decimal
+# import numpy as np
+# import matplotlib as mpl
+# import matplotlib.pyplot as plt
+# import seaborn as sns
 
 # COLLECTING AND PREPARING DATA
 
 df = pd.read_csv('list_of_operations.csv', delimiter=',')
 df['Amount'] = pd.to_numeric(df['Amount'])
 df['Posting Date'] = pd.to_datetime(df['Posting Date'], dayfirst=True)
+
 
 # PROCESSING DATA
 
@@ -42,7 +41,7 @@ class AllData:
         df['Time'] = df['Posting Date'].between(start_date, end_date, inclusive=True)
 
     @staticmethod
-    def month_date(year):
+    def month_date():
 
         df['Month'] = df['Posting Date'].apply(lambda time: (time.year, time.month))
 
@@ -68,11 +67,11 @@ class AllData:
                 print(f"Total loss: {profit} USD\n")
             print(f"List of income in {year}:\n{income_list.to_string(index=False)}\n")
             print(f"List of expenses in {year}:\n{expenses_list.to_string(index=False)}\n")
-            
+
         @staticmethod
         def monthly_tr(year, month):
 
-            AllData.month_date(year)
+            AllData.month_date()
             AllData.month_name(month)
             income_list = df.loc[(df['Month'] == (year, month)) & (df['Amount'] > 0)][
                 ['Amount', 'Posting Date', 'Category']]
@@ -138,7 +137,7 @@ class AllData:
 
         @staticmethod
         def monthly(year, month):
-            AllData.month_date(year)
+            AllData.month_date()
             AllData.month_name(month)
             salary_list = df[(df['Month'] == (year, month)) & (df['Title'] == 'Salary')][
                 ['Posting Date', 'Sender/Receiver', 'Amount']]
@@ -162,7 +161,7 @@ class AllData:
             print(f"Highest salary from {start_date} to {end_date}:\n{salary_list.max()}\n")
             print(f'Average salary from {start_date} to {end_date}: {round(salary_value.mean(), 2)} USD\n')
             print(f"Employer(s) from {start_date} to {end_date}: {', '.join(list(set(employer)))}")
-            
+
     class Car:
 
         @staticmethod
@@ -175,24 +174,25 @@ class AllData:
             gas_station_bp = df[(df['Year'] == year) & (df['Sender/Receiver'] == "BP")]
             gas_station_shell = df[(df['Year'] == year) & (df['Sender/Receiver'] == "Shell")]
             mechanic_cost = round(df.loc[(df['Year'] == year) &
-                              (df['Sender/Receiver'] == 'Mechanic')]['Amount'].sum(), 2)
+                                         (df['Sender/Receiver'] == 'Mechanic')]['Amount'].sum(), 2)
             car_wash_cost = round(df.loc[(df['Year'] == year) &
-                              (df['Sender/Receiver'] == 'Car Wash')]['Amount'].sum(), 2)
+                                         (df['Sender/Receiver'] == 'Car Wash')]['Amount'].sum(), 2)
             gas_cost_bp = round(df.loc[(df['Year'] == year) &
-                              (df['Sender/Receiver'] == 'BP')]['Amount'].sum(), 2)
+                                       (df['Sender/Receiver'] == 'BP')]['Amount'].sum(), 2)
             gas_cost_shell = round(df.loc[(df['Year'] == year) &
-                              (df['Sender/Receiver'] == 'Shell')]['Amount'].sum(), 2)
+                                          (df['Sender/Receiver'] == 'Shell')]['Amount'].sum(), 2)
 
             print(f"\nList of car expenses in {year}:\n{car_expenses}")
             print(f"\nDriver was {len(car_wash)} times in Car Wash or repairs a car.")
             print(f"On mechanic he spent {mechanic_cost} USD, and for Car Wash {car_wash_cost} USD.")
             print(f"\nList of gas station where driver refuel in {year}:"
                   f"\n{gas_station_bp['Sender/Receiver'].value_counts().to_string()} times, cost {gas_cost_bp} USD.\n"
-                  f"{gas_station_shell['Sender/Receiver'].value_counts().to_string()} times, cost {gas_cost_shell} USD.")
+                  f"{gas_station_shell['Sender/Receiver'].value_counts().to_string()} times, "
+                  f"cost {gas_cost_shell} USD.")
 
         @staticmethod
         def monthly(year, month):
-            AllData.month_date(month)
+            AllData.month_date()
             AllData.month_name(month)
             car_expenses = df.loc[(df['Month'] == (year, month)) &
                                   ((df['Category'] == "Car wash, inspections and repairs") |
@@ -214,7 +214,8 @@ class AllData:
             print(f"On mechanic he spent {mechanic_cost} USD, and for Car Wash {car_wash_cost} USD.")
             print(f"\nList of gas station where driver refuel in {AllData.month_name(month)} {year}:"
                   f"\n{gas_station_bp['Sender/Receiver'].value_counts().to_string()} times, cost {gas_cost_bp} USD.\n"
-                  f"{gas_station_shell['Sender/Receiver'].value_counts().to_string()} times, cost {gas_cost_shell} USD.")
+                  f"{gas_station_shell['Sender/Receiver'].value_counts().to_string()} times, "
+                  f"cost {gas_cost_shell} USD.")
 
         @staticmethod
         def periodic(start_date, end_date):
@@ -239,7 +240,8 @@ class AllData:
             print(f"On mechanic he spent {mechanic_cost} USD, and for Car Wash {car_wash_cost} USD.")
             print(f"\nList of gas station where driver refuel from {start_date} and {end_date}:"
                   f"\n{gas_station_bp['Sender/Receiver'].value_counts().to_string()} times, cost {gas_cost_bp} USD.\n"
-                  f"{gas_station_shell['Sender/Receiver'].value_counts().to_string()} times, cost {gas_cost_shell} USD.")
+                  f"{gas_station_shell['Sender/Receiver'].value_counts().to_string()} times, "
+                  f"cost {gas_cost_shell} USD.")
 
     class Tax:
 
@@ -247,22 +249,22 @@ class AllData:
         def annual(year):
             AllData.year_date()
             tax_expenses = df.loc[(df['Year'] == year) &
-                                  ((df['Category'] == "Interest") | (df['Category'] == "Bank Charges") | 
+                                  ((df['Category'] == "Interest") | (df['Category'] == "Bank Charges") |
                                    (df['Category'] == 'Taxes') | (df['Category'] == "Interest, Return on Investment"))]
             tax_num = df.loc[(df['Year'] == year) & (df['Category'] == "Taxes")]['Category'].value_counts().sum()
             invest_num = df.loc[(df['Year'] == year) & (df['Category'] == "Interest, Return on Investment")
-                        ]['Category'].value_counts().sum()
+                                ]['Category'].value_counts().sum()
             interest_num = df.loc[(df['Year'] == year) & (df['Category'] == "Interest")
-                        ]['Category'].value_counts().sum()
+                                  ]['Category'].value_counts().sum()
             charges_num = df.loc[(df['Year'] == year) & (df['Category'] == "Bank Charges")
-                        ]['Category'].value_counts().sum()
+                                 ]['Category'].value_counts().sum()
             tax_val = round(df.loc[(df['Year'] == year) & (df['Category'] == "Taxes")]['Amount'].sum(), 2)
             invest_val = round(df.loc[(df['Year'] == year) & (df['Category'] == "Interest, Return on Investment")][
-                'Amount'].sum(), 2)
+                                   'Amount'].sum(), 2)
             interest_val = round(df.loc[(df['Year'] == year) & (df['Category'] == "Interest")][
-                'Amount'].sum(), 2)
+                                     'Amount'].sum(), 2)
             charges_val = round(df.loc[(df['Year'] == year) & (df['Category'] == "Bank Charges")][
-                'Amount'].sum(), 2)
+                                    'Amount'].sum(), 2)
             print(f"List of charges in {year}:")
             print(tax_expenses[['Amount', 'Posting Date', 'Category']])
             print(f"\nNumber of Taxes: {tax_num}. Total payment {tax_val} USD.\n"
@@ -272,25 +274,27 @@ class AllData:
 
         @staticmethod
         def monthly(year, month):
-            AllData.month_date(month)
+            AllData.month_date()
             AllData.month_name(month)
             tax_expenses = df.loc[(df['Month'] == (year, month)) &
                                   ((df['Category'] == "Interest") | (df['Category'] == "Bank Charges") |
                                    (df['Category'] == 'Taxes') | (df['Category'] == "Interest, Return on Investment"))]
-            tax_num = df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Taxes")]['Category'].value_counts().sum()
+            tax_num = df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Taxes")][
+                'Category'].value_counts().sum()
             invest_num = df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Interest, Return on Investment")
-                        ]['Category'].value_counts().sum()
+                                ]['Category'].value_counts().sum()
             interest_num = df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Interest")
-                        ]['Category'].value_counts().sum()
+                                  ]['Category'].value_counts().sum()
             charges_num = df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Bank Charges")
-                        ]['Category'].value_counts().sum()
+                                 ]['Category'].value_counts().sum()
             tax_val = round(df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Taxes")]['Amount'].sum(), 2)
-            invest_val = round(df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Interest, Return on Investment")][
-                'Amount'].sum(), 2)
+            invest_val = round(
+                df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Interest, Return on Investment")][
+                    'Amount'].sum(), 2)
             interest_val = round(df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Interest")][
-                'Amount'].sum(), 2)
+                                     'Amount'].sum(), 2)
             charges_val = round(df.loc[(df['Month'] == (year, month)) & (df['Category'] == "Bank Charges")][
-                'Amount'].sum(), 2)
+                                    'Amount'].sum(), 2)
             print(f"List of charges in {AllData.month_name(month)} {year}:")
             print(tax_expenses[['Amount', 'Posting Date', 'Category']])
             print(f"\nNumber of Taxes: {tax_num}. Total payment {tax_val} USD.\n"
@@ -306,18 +310,18 @@ class AllData:
                                    (df['Category'] == 'Taxes') | (df['Category'] == "Interest, Return on Investment"))]
             tax_num = df.loc[(df['Time']) & (df['Category'] == "Taxes")]['Category'].value_counts().sum()
             invest_num = df.loc[(df['Time']) & (df['Category'] == "Interest, Return on Investment")
-                        ]['Category'].value_counts().sum()
+                                ]['Category'].value_counts().sum()
             interest_num = df.loc[(df['Time']) & (df['Category'] == "Interest")
-                        ]['Category'].value_counts().sum()
+                                  ]['Category'].value_counts().sum()
             charges_num = df.loc[(df['Time']) & (df['Category'] == "Bank Charges")
-                        ]['Category'].value_counts().sum()
+                                 ]['Category'].value_counts().sum()
             tax_val = round(df.loc[(df['Time']) & (df['Category'] == "Taxes")]['Amount'].sum(), 2)
             invest_val = round(df.loc[(df['Time']) & (df['Category'] == "Interest, Return on Investment")][
-                'Amount'].sum(), 2)
+                                   'Amount'].sum(), 2)
             interest_val = round(df.loc[(df['Time']) & (df['Category'] == "Interest")][
-                'Amount'].sum(), 2)
+                                     'Amount'].sum(), 2)
             charges_val = round(df.loc[(df['Time']) & (df['Category'] == "Bank Charges")][
-                'Amount'].sum(), 2)
+                                    'Amount'].sum(), 2)
             print(f"List of charges from {start_date} to {end_date}:")
             print(tax_expenses[['Amount', 'Posting Date', 'Category']])
             print(f"\nNumber of Taxes: {tax_num}. Total payment {tax_val} USD.\n"
@@ -357,3 +361,4 @@ AllData.Car.periodic('2020-9-28', '2021-4-18')
 AllData.Tax.annual(2021)
 AllData.Tax.monthly(2020, 12)
 AllData.Tax.periodic('2021-1-10', '2021-2-28')
+                  
