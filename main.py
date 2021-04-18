@@ -162,41 +162,6 @@ class AllData:
             print(f"Highest salary from {start_date} to {end_date}:\n{salary_list.max()}\n")
             print(f'Average salary from {start_date} to {end_date}: {round(salary_value.mean(), 2)} USD\n')
             print(f"Employer(s) from {start_date} to {end_date}: {', '.join(list(set(employer)))}")
-
-    class Purchase:
-        # all expenses that are not, for example taxes, fees, insurances etc.
-        # in no category, decided to iterate through type and title
-        @staticmethod
-        def annual(year):
-
-            AllData.year_date()
-            purchase_list = df.loc[(df['Year'] == year) &
-                                   ((df['Category'] == 'Groceries') | (df['Category'] == 'Cosmetics') |
-                                    (df['Category'] == 'Fuel') | (df['Category'] == 'Clothes') |
-                                    (df['Category'] == 'Equipment') |
-                                    (df['Category'] == 'Clothes') | (df['Category'] == 'Footwear') |
-                                    (df['Category'] == 'Acessories and Jewelry') | (df['Category'] == 'Garden') |
-                                    (df['Category'] == 'Online Shopping') |
-                                    (df['Category'] == 'Newspapers and Magazines') |
-                                    (df['Category'] == 'Books') | (df['Category'] == 'Sport') |
-                                    (df['Category'] == 'Cinema and Theater') |
-                                    (df['Category'] == 'Glasses and Lenses') | (df['Category'] == 'Toys') |
-                                    (df['Category'] == 'Restaurant and Cafes') |
-                                    (df['Category'] == 'Car wash, inspections and repairs') |
-                                    (df['Category'] == 'Medicine') | (df['Category'] == 'Repairs and Renovations') |
-                                    (df['Category'] == 'Beauty, Hairdresser and Beautician') |
-                                    (df['Sender/Receiver'] == 'Bus Station') | (df['Sender/Receiver'] == 'PayPal') |
-                                    (df['Sender/Receiver'] == 'ShoeShop') | (df['Sender/Receiver'] == 'PayU') |
-                                    (df['Sender/Receiver'] == 'Transfers24') |
-                                    (df['Sender/Receiver'] == 'Car Parking') | (df['Sender/Receiver'] == 'Tesco') |
-                                    (df['Sender/Receiver'] == 'Post Office') | (df['Category'] == 'Sale'))][
-                ['Amount', 'Posting Date', 'Category']]
-            print(f"\nNumber of purchases: {len(purchase_list)}\nList of all purchases:\n{purchase_list.to_string()}")
-            l = []
-            for item in df['Category']:
-                l.append(item)
-                print(item)
-            print(set(l))
             
     class Car:
 
@@ -385,7 +350,6 @@ AllData.Salary.annual(2020)
 AllData.Salary.monthly(2021, 4)
 AllData.Salary.periodic('2020-12-4', '2021-2-18')
 AllData.Transaction.monthly_tr(2020, 11)
-AllData.Purchase.annual(2020)
 AllData.Car.annual(2020)
 AllData.Car.periodic('2020-12-19', '2021-1-31')
 AllData.Car.monthly(2021, 2)
